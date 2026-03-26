@@ -87,6 +87,8 @@ export interface PositionedNode {
   height: number
   /** Inline styles resolved from classDef + explicit `style` statements — override theme defaults */
   inlineStyle?: Record<string, string>
+  /** CSS class name from `:::className` or `class X className` — emitted as a CSS class on the SVG element */
+  cssClass?: string
 }
 
 export interface PositionedEdge {
